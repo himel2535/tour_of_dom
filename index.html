@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOUR OF DOM</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      #fruits {
+        color: yellow;
+      }
+      .kocormocor .mocor {
+        color: aquamarine;
+      }
+    </style>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>This is my header no banner</h1>
+    </header>
+    <main>
+      <h1>Welcome to my dom</h1>
+      <ul>
+        <li>monwar</li>
+        <li>hossan</li>
+        <li>himel</li>
+      </ul>
+      <h1 id="khabar">Foods</h1>
+      <ul id="list_foods">
+        <li class="list_khabar">rice</li>
+        <li class="list_khabar">vegetables</li>
+        <li class="list_khabar">Fishes</li>
+        <li class="list_khabar">moja</li>
+        <li class="list_khabar">dokaner khabar</li>
+      </ul>
+      <h1 id="fruits_title">fruits</h1>
+      <ul>
+        <li>mango</li>
+        <li class="water_type">watermelon</li>
+        <li>apple</li>
+        <li class="water_type">orange</li>
+      </ul>
+      <section class="kocormocor">
+        <h1>moja</h1>
+        <p class="kocor">
+          Lorem ipsum dolor, sit <span>kjdksjdksdjk</span> amet consectetur
+          adipisicing <span>okkoshpokkos</span> elit. Velit, iste?
+        </p>
+        <p class="mocor">jkhfcsdkjklskdmlskmd</p>
+        <p>oporertjertjerjefjkgefk</p>
+      </section>
+      <section class="angismangis">
+        <h1>saja</h1>
+        <p>
+          Lorem ipsum dolor, sit amet <span>congpongmomg.</span> consectetur
+          adipisicing elit. <span>kakingpaking</span> Autem exercitationem
+          perferendis a fuga quod nobis.
+        </p>
+      </section>
+    </main>
+    <script>
+      // console.log('hello kaccher manushjon')
+      // console.log("hello mojar mojar lukjon")
+      // console.log("Document Object Model")
+      const student = {
+        name: "abul mia",
+        id: 121,
+        study: function (subject) {
+          //   console.log("studying subject", subject);
+        },
+      };
+
+      const liCollection = document.getElementsByTagName("li");
+      //   console.log(liCollection);
+      for (const li of liCollection) {
+        // console.log(li.innerText);
+      }
+      //   all h1 tags
+      const allHeadings = document.getElementsByTagName("h1");
+      for (const heading of allHeadings) {
+        // console.log("heading is :", heading.innerText);
+      }
+      const k = document.getElementsByClassName("list_khabar");
+      for (const khabar of k) {
+        // console.log(khabar)
+      }
+
+      //   get by id--->
+      const fruits_id = document.getElementById("fruits_title");
+      console.log(fruits_id.innerText);
+      fruits_id.innerText = "bangladeshi fruits";
+
+      // get elements by class name--->
+      const waterFruits = document.getElementsByClassName("water_type");
+      for (const fruit of waterFruits) {
+        console.log(fruit.innerText);
+      }
+
+      const spanElements= document.querySelectorAll('.kocormocor p span')
+      for (const span of spanElements){
+        console.log(span.innerText)
+      }
+
+    </script>
+    <script src="js/hello.js"></script>
+  </body>
+</html>
