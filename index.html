@@ -14,6 +14,18 @@
       .kocormocor .mocor {
         color: aquamarine;
       }
+      .bg_aqua {
+        background-color: aqua;
+      }
+      .bold {
+        font-weight: 900;
+      }
+      .big {
+        font-size: 3em;
+      }
+      .color{
+        color: white;
+      }
     </style>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
@@ -44,7 +56,7 @@
         <li class="water_type">orange</li>
       </ul>
       <section class="kocormocor">
-        <h1>moja</h1>
+        <h1 class="yammi">moja</h1>
         <p class="kocor">
           Lorem ipsum dolor, sit <span>kjdksjdksdjk</span> amet consectetur
           adipisicing <span>okkoshpokkos</span> elit. Velit, iste?
@@ -96,14 +108,13 @@
       // get elements by class name--->
       const waterFruits = document.getElementsByClassName("water_type");
       for (const fruit of waterFruits) {
-        console.log(fruit.innerText);
+        // console.log(fruit.innerText);
       }
 
-      const spanElements= document.querySelectorAll('.kocormocor p span')
-      for (const span of spanElements){
-        console.log(span.innerText)
+      const spanElements = document.querySelectorAll(".kocormocor p span");
+      for (const span of spanElements) {
+        // console.log(span.innerText)
       }
-
     </script>
     <script src="js/hello.js"></script>
   </body>
