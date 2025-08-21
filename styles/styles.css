@@ -1,3 +1,10 @@
 li{
     color: green;
 }
+.section-card{
+    background-color: aqua;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid green;
+}
